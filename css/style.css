@@ -1227,7 +1227,6 @@ p.text-price {
 .product-img {
   min-height: 777px;
   background-color: #F7F7F7;
-  /* background-color: #866060; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
