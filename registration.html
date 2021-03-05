@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Registration</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,9 +19,40 @@
                 <a href="#"><img src="img/Search_ico.svg" width="26" height="27" alt="Search"></a>
             </div>
             <div class="right-menu">
-                <a href="#"><img src="img/Burg_menu_ico.svg" width="32" height="23" alt="Burg_menu"></a>
-                <a href="registration.html"><img src="img/Peaple_ico.svg" width="29" height="29" alt="Peaple_ico"></a>
-                <a href="cart.html"><img src="img/basket_ico.svg" width="32" height="29" alt="Basket"></a>
+                <input type="checkbox" id="burger-menu">
+                <label for="burger-menu"><img class="burger-btn" src="img/Burg_menu_ico.svg" width="32" height="23" alt="Burg_menu"></label>
+                <a href="registration.html" class="hidden"><img src="img/Peaple_ico.svg" width="29" height="29" alt="Peaple_ico"></a>
+                <a href="cart.html" class="hidden"><img src="img/basket_ico.svg" width="32" height="29" alt="Basket"></a>
+                <div class="burger-drop-menu">
+                    <nav class="nav">
+                        <label for="burger-menu" class="burger-img"><img src="./img/Close_btn_ico.svg" width="12" height="12" alt="close"></label>
+                        <p class="nav-title">MENU</p>
+                        <p class="nav-sub-title">MAN</p>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Bags</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Denim</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">T-Shirts</a></li>
+                          </ul>
+                        <p class="nav-sub-title">WOMAN</p>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Jackets & Coats</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Polos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">T-Shirts</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Shirts</a></li>
+                        </ul>
+                        <p class="nav-sub-title">KIDS</p>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Jackets & Coats</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Polos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">T-Shirts</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Shirts</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Bags</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -29,23 +60,23 @@
 <main>
     <h1 class="visually-hidden">Корзина</h1>
     <section class="catalog-header">
-        <div class="wrap catalog-wrap">
+        <div class="wrap catalog-wrap registration-header">
                 <a href="#"><h2 class="arrivals">REGISTRATION</h2></a>
         </div>
     </section>
 
     <section class="registration-filed">
         <div class="wrap registration-wrap">
-            <form action="" class="form-filed">
+            <form class="form-filed">
                 <p class="name name-filed">Your Name</p>
-                <input type="text" class="filed" placeholder="First Name">
-                <input type="text" class="filed" placeholder="Last Name">
+                <input type="text" class="filed" placeholder="First Name" required>
+                <input type="text" class="filed" placeholder="Last Name" required>
 
-                <input type="radio" name="gender" class="gender"><span class="gender-name">Male</span>
-                <input type="radio" name="gender" class="gender"><span class="gender-name">Female</span>
+                <input type="radio" name="gender" class="gender" required><span class="gender-name">Male</span>
+                <input type="radio" name="gender" class="gender" required><span class="gender-name">Female</span>
 
                 <p class="details name-filed">Login details</p>
-                <input type="email" class="filed" placeholder="Email">
+                <input type="email" class="filed" placeholder="Email" required>
                 <input type="password" class="filed" placeholder="Password">
                 <p class="pass-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
 

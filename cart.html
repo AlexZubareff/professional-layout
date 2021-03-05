@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,9 +20,40 @@
                 <a href="#"><img src="img/Search_ico.svg" width="26" height="27" alt="Search"></a>
             </div>
             <div class="right-menu">
-                <a href="#"><img src="img/Burg_menu_ico.svg" width="32" height="23" alt="Burg_menu"></a>
-                <a href="registration.html"><img src="img/Peaple_ico.svg" width="29" height="29" alt="Peaple_ico"></a>
-                <a href="cart.html"><img src="img/basket_ico.svg" width="32" height="29" alt="Basket"></a>
+                <input type="checkbox" id="burger-menu">
+                <label for="burger-menu"><img class="burger-btn" src="img/Burg_menu_ico.svg" width="32" height="23" alt="Burg_menu"></label>
+                <a href="registration.html" class="hidden"><img src="img/Peaple_ico.svg" width="29" height="29" alt="Peaple_ico"></a>
+                <a href="cart.html" class="hidden"><img src="img/basket_ico.svg" width="32" height="29" alt="Basket"></a>
+                <div class="burger-drop-menu">
+                    <nav class="nav">
+                        <label for="burger-menu" class="burger-img"><img src="./img/Close_btn_ico.svg" width="12" height="12" alt="close"></label>
+                        <p class="nav-title">MENU</p>
+                        <p class="nav-sub-title">MAN</p>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Bags</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Denim</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">T-Shirts</a></li>
+                          </ul>
+                        <p class="nav-sub-title">WOMAN</p>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Jackets & Coats</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Polos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">T-Shirts</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Shirts</a></li>
+                        </ul>
+                        <p class="nav-sub-title">KIDS</p>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Jackets & Coats</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Polos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">T-Shirts</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Shirts</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Bags</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -30,7 +62,7 @@
 <h1 class="visually-hidden">Корзина</h1>
     <section class="catalog-header">
         <div class="wrap catalog-wrap">
-            <a href="#"><h2 class="arrivals">SHOPPING CART</h2></a>
+            <a href="#" class="shopping"><h2 class="arrivals shopping">SHOPPING CART</h2></a>
         </div>
     </section>
 </main>
@@ -41,7 +73,7 @@
             <img class="cart-product" src="./img/cart_img_product_1.jpg" alt="product_1">
             <div class="cart-card-content">
                 <h2>MANGO  PEOPLE<br>T-SHIRT</h2>
-                <button class="close-btn"><img src="./img/Close_btn_ico.svg" alt="close"></button>  
+                <button class="close-btn"><img src="./img/Close_btn_ico.svg" width="18" height="18" alt="close"></button>  
                 <p class="prod-parameter">Price: <span class="card-price">$300</span></p>
                 <p class="prod-parameter">Color: Red</p>
                 <p class="prod-parameter">Size: Xl	</p>
@@ -53,7 +85,7 @@
             <img class="cart-product" src="./img/cart_img_product_2.jpg" alt="product_2">
             <div class="cart-card-content">
                 <h2>MANGO  PEOPLE<br>T-SHIRT</h2>
-                <button class="close-btn"><img src="./img/Close_btn_ico.svg" alt="close"></button>  
+                <button class="close-btn"><img src="./img/Close_btn_ico.svg" width="18" height="18" alt="close"></button>  
                 <p class="prod-parameter">Price: <span class="card-price">$300</span></p>
                 <p class="prod-parameter">Color: Red</p>
                 <p class="prod-parameter">Size: Xl	</p>
@@ -66,7 +98,7 @@
 
     </div>
     <div class="cart-detail">
-        <form>
+        <form class="detail">
             <div class="adress-det">
                 <p class="adress-filed">SHIPPING ADRESS</p>
                 <input type="text" class="cart-filed" placeholder="Bangladesh">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Home page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,13 +15,44 @@
     <header class="header">
         <div class="wrap header-menu">
             <div class="left-menu">
-                <a href="index.html"><img src="img/logo.png" width="44" height="38" alt="Logo"></a>
+                <a href="#"><img src="img/logo.png" width="44" height="38" alt="Logo"></a>
                 <a href="#"><img src="img/Search_ico.svg" width="26" height="27" alt="Search"></a>
             </div>
             <div class="right-menu">
-                <a href="#"><img src="img/Burg_menu_ico.svg" width="32" height="23" alt="Burg_menu"></a>
-                <a href="registration.html"><img src="img/Peaple_ico.svg" width="29" height="29" alt="Peaple_ico"></a>
-                <a href="cart.html"><img src="img/basket_ico.svg" width="32" height="29" alt="Basket"></a>
+                <input type="checkbox" id="burger-menu">
+                <label for="burger-menu"><img class="burger-btn" src="img/Burg_menu_ico.svg" width="32" height="23" alt="Burg_menu"></label>
+                <a href="registration.html" class="hidden"><img src="img/Peaple_ico.svg" width="29" height="29" alt="Peaple_ico"></a>
+                <a href="cart.html" class="hidden"><img src="img/basket_ico.svg" width="32" height="29" alt="Basket"></a>
+                <div class="burger-drop-menu">
+                    <nav class="nav">
+                        <label for="burger-menu" class="burger-img"><img src="./img/Close_btn_ico.svg" width="12" height="12" alt="close"></label>
+                        <p class="nav-title">MENU</p>
+                        <p class="nav-sub-title">MAN</p>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Bags</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Denim</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">T-Shirts</a></li>
+                          </ul>
+                        <p class="nav-sub-title">WOMAN</p>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Jackets & Coats</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Polos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">T-Shirts</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Shirts</a></li>
+                        </ul>
+                        <p class="nav-sub-title">KIDS</p>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Jackets & Coats</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Polos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">T-Shirts</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Shirts</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Bags</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -29,9 +60,9 @@
 <main>
 <h1 class="visually-hidden">Магазин брендовой одежды</h1>
     <section class="promo">
-        <div class="wrap">
+        <div class="wrap promo-wrap">
             <div class="promo-left">
-                <img src="img/promo_left.jpg" alt="">
+                <img class="promo-img" src="img/Promo_img.png" alt="photo">
             </div>
             <div class="promo-right">
                 <h2><span class="brand">THE BRAND</span><br>
@@ -67,57 +98,57 @@
             <p class="featured-text">Shop for items based on what we featured in this week</p>
             <div class="fiatured-cards">
                 <div class="cards">
-                    <img src="./img/card_1.jpg" alt="" class="img-cards">
-                    <p class="h2-cards">ELLERY X M'O CAPSULE</p>
-                    <p class="text-cards">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="text-price">$52.00</p>
-                        <div class="hover-cards">
-                            <button class="btn-card-hover"><img src="img/cart_white_ico.svg">Add to Cart</button>
-                        </div>
-                </div>
-                <div class="cards">
-                    <img src="./img/card_2.jpg" alt="" class="img-cards">
+                    <a href="#"><img src="./img/card_1.jpg" alt="ELLERY X M'O CAPSULE" class="img-cards"></a>
                     <p class="h2-cards">ELLERY X M'O CAPSULE</p>
                     <p class="text-cards">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="text-price">$52.00</p>
                     <div class="hover-cards">
-                        <button class="btn-card-hover"><img src="img/cart_white_ico.svg">Add to Cart</button>
+                        <button class="btn-card-hover"><img src="img/cart_white_ico.svg" alt="cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="./img/card_3.jpg" alt="" class="img-cards">
+                    <img src="./img/card_2.jpg" alt="ELLERY X M'O CAPSULE" class="img-cards">
                     <p class="h2-cards">ELLERY X M'O CAPSULE</p>
                     <p class="text-cards">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="text-price">$52.00</p>
                     <div class="hover-cards">
-                        <button class="btn-card-hover"><img src="img/cart_white_ico.svg">Add to Cart</button>
+                        <button class="btn-card-hover"><img src="img/cart_white_ico.svg" alt="cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="./img/card_4.jpg" alt="" class="img-cards">
+                    <img src="./img/card_3.jpg" alt="ELLERY X M'O CAPSULE" class="img-cards">
                     <p class="h2-cards">ELLERY X M'O CAPSULE</p>
                     <p class="text-cards">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="text-price">$52.00</p>
                     <div class="hover-cards">
-                        <button class="btn-card-hover"><img src="img/cart_white_ico.svg">Add to Cart</button>
+                        <button class="btn-card-hover"><img src="img/cart_white_ico.svg" alt="cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="./img/card_5.jpg" alt="" class="img-cards">
+                    <img src="./img/card_4.jpg" alt="ELLERY X M'O CAPSULE" class="img-cards">
                     <p class="h2-cards">ELLERY X M'O CAPSULE</p>
                     <p class="text-cards">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="text-price">$52.00</p>
                     <div class="hover-cards">
-                        <button class="btn-card-hover"><img src="img/cart_white_ico.svg">Add to Cart</button>
+                        <button class="btn-card-hover"><img src="img/cart_white_ico.svg" alt="cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="./img/card_6.jpg" alt="" class="img-cards">
+                    <img src="./img/card_5.jpg" alt="ELLERY X M'O CAPSULE" class="img-cards">
                     <p class="h2-cards">ELLERY X M'O CAPSULE</p>
                     <p class="text-cards">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="text-price">$52.00</p>
                     <div class="hover-cards">
-                        <button class="btn-card-hover"><img src="img/cart_white_ico.svg">Add to Cart</button>
+                        <button class="btn-card-hover"><img src="img/cart_white_ico.svg" alt="cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="./img/card_6.jpg" alt="ELLERY X M'O CAPSULE" class="img-cards">
+                    <p class="h2-cards">ELLERY X M'O CAPSULE</p>
+                    <p class="text-cards">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="text-price">$52.00</p>
+                    <div class="hover-cards">
+                        <button class="btn-card-hover"><img src="img/cart_white_ico.svg" alt="cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -157,7 +188,7 @@
                </div>
                <div class="feedback-subscribe">
                    <p class="subscribe-text"><span class="text-h2">SUBSCRIBE</span><br>
-                   <span class="text-h3">FOR OUR NEWLETTER AND PROMOTION.</span></p>
+                   <span class="text-h3">FOR OUR NEWLETTER AND PROMOTION</span></p>
                    <form class="subscribe" action="#">
                     <input class="email-filed" type="email" placeholder="Enter Your Email*" required>
                     <input class="submit-btn" type="submit" value="Subscribe">
@@ -170,10 +201,10 @@
         <div class="wrap footer-menu">
                 <p class="copyright">© 2021  Brand  All Rights Reserved.</p>
                 <div class="social-menu">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/" class="social-link" target="blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" class="social-link" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.ru/" class="social-link" target="blank"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://twitter.com/" class="social-link" target="blank"><i class="fab fa-twitter"></i></a>
                 </div>
         </div>
      </footer>
